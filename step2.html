@@ -15,7 +15,18 @@
 	<!--<script type="text/javascript" src="assets/js/main.js"></script>-->
 	<link rel="stylesheet" type="text/css" href="font-awesome-4.4.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600' rel='stylesheet' type='text/css'>
+	<link href="assets/square/yellow.css" rel="stylesheet">
+	<link href="assets/flat/yellow.css" rel="stylesheet">
+	<script src="assets/js/icheck.min.js"></script>
 
+	<script>
+$(document).ready(function(){
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_square-yellow',
+    radioClass: 'iradio_square-yellow'
+  });
+});
+</script>
 	<!-- <script>
   $(document).ready(function(){
 
@@ -72,7 +83,7 @@ $(".sliding-div").slideToggle('slow');
 							<option value="9">9 passengers</option>
 							<option value="10">10 passengers</option>
 						</select>
-						<br>
+						<br><div class="top-divider"></div>
 						<span class="top-letter">are flying from</span>
 						<br>
 						<select class="selectpicker bs-select-hidden" name="Departure" title="Departure" data-live-search="true">
@@ -83,7 +94,7 @@ $(".sliding-div").slideToggle('slow');
 							<option value="Coimbatore">Coimbatore</option>
 							<option value="Goa">Goa</option>
 						</select>
-						<br>
+						<br><div class="top-divider"></div>
 						<span class="top-letter">to</span>
 						<br>
 						<select class="selectpicker bs-select-hidden" name="Destination" title="Destination" data-live-search="true">
@@ -94,7 +105,7 @@ $(".sliding-div").slideToggle('slow');
 							<option value="Coimbatore">Coimbatore</option>
 							<option value="Goa">Goa</option>
 						</select>
-						<br>
+						<br><div class="top-divider"></div>
 						<span class="top-letter">on</span>
 						<br>
 						<div class="input-group date top-input">
@@ -132,7 +143,7 @@ $(".sliding-div").slideToggle('slow');
 			<div class="col-md-12 margin-top">
 				<form method="POST" accept-charset="utf-8">
 					<div class="form-group">
-						<h3>Your Details</h3>
+						<h3>Passenger1 Details</h3>
 						<div class="col-md-3 col-sm-6 col-xs-12 input-sapce">
 							<input class="form-control" type="text" name="fname1" placeholder="First Name">
 						</div>
@@ -141,7 +152,7 @@ $(".sliding-div").slideToggle('slow');
 						</div>
 						<div class="col-md-3 col-sm-6 col-xs-12 input-sapce teen">
 							<select class="selectpicker bs-select-hidden" name="row1" title="Please select Type">
-								<option class="bs-title-option" value="">Please select Type</option>
+								<option class="bs-title-option passenger-type-color" value="">Please select Type</option>
 								<option>Adult</option>
 								<option>Children</option>
 							</select>
@@ -151,7 +162,7 @@ $(".sliding-div").slideToggle('slow');
 						</div>
 						<div class="clearfix"></div>
 						<br>
-						<h3>Passenger1 Details</h3>
+						<h3>Passenger2 Details</h3>
 						<div class="col-md-3 col-sm-6 col-xs-12 input-sapce">
 							<input class="form-control" type="text" name="fname2" placeholder="First Name">
 						</div>
@@ -170,7 +181,7 @@ $(".sliding-div").slideToggle('slow');
 						</div>
 						<div class="clearfix"></div>
 						<br>
-						<h3>Passenger2 Details</h3>
+						<h3>Passenger3 Details</h3>
 						<div class="col-md-3 col-sm-6 col-xs-12 input-sapce">
 							<input class="form-control" type="text" name="fname3" placeholder="First Name">
 						</div>
@@ -189,7 +200,7 @@ $(".sliding-div").slideToggle('slow');
 						</div>
 						<div class="clearfix"></div>
 						<br>
-						<h3>Passenger3 Details</h3>
+						<h3>Passenger4 Details</h3>
 						<div class="col-md-3 col-sm-6 col-xs-12 input-sapce">
 							<input class="form-control" type="text" name="fname4" placeholder="First Name">
 						</div>
@@ -393,7 +404,7 @@ $(".sliding-div").slideToggle('slow');
 								<i class="fa fa-inr fa-3x"></i>
 							</div>
 							<div class="col-md-11">
-								<input class="form-control" type="text" name="bidamount" placeholder="Enter Your Bid Amount">
+								<input class="form-control" type="number" name="bidamount" placeholder="Enter Your Bid Amount">
 							</div>											
 						</div>
 					</div>
