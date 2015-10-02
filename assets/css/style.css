@@ -112,7 +112,7 @@ body
 .banner-inner-box
 {
 	border: 1px solid #cccccc;
-	border-radius: 5px;
+	/*border-radius: 5px;*/
 	margin-top: 40px;
 	margin-bottom: 40px;
 	background: #ffffff;
@@ -137,16 +137,25 @@ body
 	width: 220px;
 	margin: 0 auto;
 }
+.btn
+{
+	border-radius:0;
+}
+.datepicker
+{
+	border-radius: 0;
+}
+.input-group-addon
+{
+	border-radius: 0;
+}
+.form-control
+{
+	border-radius: 0;
+}
 .zone
 {
 	text-align: center;
-}
-@media screen and (width: 768px)
-{
-	.zone
-	{
-		text-align: left;
-	}
 }
 /*Page two  Starts*/
 .number
@@ -163,7 +172,8 @@ body
 	padding-bottom: 40px;
     width: 180px;
     background-size: 90%;
-    margin: 30px;
+    margin:0 auto;
+    margin-top: 30px;
 }
 .top-select
 {
@@ -189,6 +199,8 @@ body
 	background: none;
     border: 0;
     border-bottom: 1px solid #fff;
+    color: #ffffff;
+    font-size: 16px;
 }
 
 .age-align
@@ -202,7 +214,8 @@ body
 .steps-bar
 {
 	background: #ffac19;
-    padding: 10px 0;
+    padding: 20px 0 5px 0;
+    margin-top: 15px;
 }
 .steps-align
 {
@@ -212,12 +225,29 @@ body
 }
 .step-number
 {
-	color: #ffd59f;
-    font-size: 30px;
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    padding: 0px 12px;
+	color: #ffffff;
+    font-size: 28px;
     background: #FFAC19;
+    z-index: 2;
+}
+.step-number a
+{
+	text-decoration: none;
+	color: #ffffff;
+}
+.step-number a:hover
+{
+	color: #ffd59f;
+	transition:color 0.7s ease-in-out;
+}
+.round
+{
+	height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    z-index: 1;
+    margin: 0 auto;
 }
 .current-page
 {
@@ -262,6 +292,10 @@ body
 {
 	margin-top:10px; 
 }
+.align-center
+{
+	margin: 0 auto;
+}
 /*Page two  Ends*/
 
 /*Page three  Starts*/
@@ -295,7 +329,7 @@ body
 }
 .detail-box
 {
-	margin: 50px 0;
+	margin: 25px 0;
 	border:2px solid #000000;
 }
 .detail-box h3
@@ -327,8 +361,8 @@ body
 }
 .payment-part
 {
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 .conditions
 {
@@ -336,7 +370,7 @@ body
 }
 .confirm-bid
 {
-	padding-bottom: 200px;
+	padding-bottom: 50px;
 }
 /*Page three Ends*/
 
@@ -346,7 +380,7 @@ body
 	background: #ffffff;
 	text-align: center;
 	padding-top: 15px;
-	padding-bottom: 150px;
+	padding-bottom:50px;
 }
 .logo-ticket
 {
@@ -358,12 +392,13 @@ body
  }
 .dep-des
 {
- margin: 20px 0;
+ margin:20px 0;
 }
 .dep-des h2
 {
 	font-weight: 800;
 	line-height: 10px;
+	margin: 15px 0;
 }
 .dep-des p
 {
@@ -419,12 +454,6 @@ a.click-show_hide:hover
 .top-icon
 {
 	border:1px solid #fff;
-}
-@media screen and(max-width:300px){
-.logo-steps
-{
-	margin: 0 auto;
-}	
 }
 th h4
 {
