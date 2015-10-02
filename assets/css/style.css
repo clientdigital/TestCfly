@@ -426,3 +426,7 @@ a.click-show_hide:hover
 	margin: 0 auto;
 }	
 }
+th h4
+{
+	font-weight: 900;
+}
