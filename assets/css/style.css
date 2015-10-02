@@ -477,3 +477,9 @@ tr td h4
 {
 	color: #BCBCBC; !important ;
 }
+.pad-top-bot
+{
+	padding-top: 5px;
+	padding-bottom: 8px;
+	margin-left: 0;
+}
